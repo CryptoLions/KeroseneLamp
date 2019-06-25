@@ -1,0 +1,261 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Wed Apr 10 19:25:00 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "author",
+                    "type": "uint64"
+                },
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "getfuel",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acc",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "passtime",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lastticker",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "pair_uint64_name",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "value",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "pass",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "pdate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "saeburn",
+            "base": "",
+            "fields": [
+                {
+                    "name": "who",
+                    "type": "name"
+                },
+                {
+                    "name": "assetids",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "saeclaim",
+            "base": "",
+            "fields": [
+                {
+                    "name": "who",
+                    "type": "name"
+                },
+                {
+                    "name": "assetids",
+                    "type": "pair_uint64_name[]"
+                }
+            ]
+        },
+        {
+            "name": "saecreate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "assetid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "saetransfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "assetids",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "sasset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "author",
+                    "type": "name"
+                },
+                {
+                    "name": "category",
+                    "type": "name"
+                },
+                {
+                    "name": "idata",
+                    "type": "string"
+                },
+                {
+                    "name": "mdata",
+                    "type": "string"
+                },
+                {
+                    "name": "container",
+                    "type": "sasset[]"
+                },
+                {
+                    "name": "containerf",
+                    "type": "account[]"
+                }
+            ]
+        },
+        {
+            "name": "ticker",
+            "base": "",
+            "fields": []
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "getfuel",
+            "type": "getfuel",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "saeburn",
+            "type": "saeburn",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "saeclaim",
+            "type": "saeclaim",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "saecreate",
+            "type": "saecreate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "saetransfer",
+            "type": "saetransfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "ticker",
+            "type": "ticker",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "passes",
+            "type": "pass",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "sassets",
+            "type": "sasset",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
