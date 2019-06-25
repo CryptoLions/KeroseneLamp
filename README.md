@@ -6,3 +6,5 @@ The contract allows for the creation of one (and only one at this point) NFT lan
 
 Users who keep the latern burning while passing it to new users are tracked in a table, and can be awared with prizes.
 
+---  
+For CDT 1.5.0
